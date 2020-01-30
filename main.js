@@ -52,13 +52,11 @@ $(document).ready(function() {
     /* ---------------------------------------------------------------------- */
 
     const socialContainer = $('.social-container');
-    $('#share').click(function() {
-        if ($(this).parent().hasClass('show')) {
-            socialContainer.addClass('hide');
+    $('.social-icon').first().click(function() {
+        if(socialContainer.hasClass('show')) {
             socialContainer.removeClass('show');
         } else {
             socialContainer.addClass('show');
-            socialContainer.removeClass('hide');
         }
     });
 
@@ -71,7 +69,6 @@ $(document).ready(function() {
     const colorBox = $('.color-box');
     colorBox.children().not(':first').click(function() {
         let idBox = $(this).attr('id');
-        console.log(idBox);
         if (idBox !== 'red') {
             $('#content').attr('class', idBox);
             $('#header').attr('class', 'container shadow-none position-relative ' + idBox);
@@ -84,12 +81,10 @@ $(document).ready(function() {
     });
 
     $('.setting-icon').click(function() {
-        if ($(this).parent().hasClass('show')) {
-            colorBox.addClass('hide');
+        if(colorBox.hasClass('show')) {
             colorBox.removeClass('show');
         } else {
             colorBox.addClass('show');
-            colorBox.removeClass('hide');
         }
     });
 
