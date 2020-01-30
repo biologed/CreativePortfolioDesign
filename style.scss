@@ -34,9 +34,11 @@ header {
 
 .logo {
   display: none;
+
   .name {
     font-size: 32px;
   }
+
   .sub {
     font-family: 18px $sub-font;
   }
@@ -46,6 +48,7 @@ header {
   margin-top: 15px;
   position: absolute;
   right: 78px;
+
   &.show {
     @for $i from 2 through 5 {
       .social-icon {
@@ -56,17 +59,20 @@ header {
       }
     }
   }
+
   .social-icon {
     background: $red;
     border: 2px solid $white;
     height: 35px;
     transition: .5s;
     width: 35px;
+
     i {
       font-size: 20px;
       line-height: 32px;
       width: 32px;
     }
+
     @for $i from 1 through 5 {
       &:nth-child(#{$i}) {
         z-index: 100 - $i;
@@ -89,18 +95,22 @@ header {
     padding: 12px 0 0 19px;
     transition: .5s;
     width: 200px;
+
     &:hover {
       filter: none;
     }
   }
+
   .name {
     font-size: 30px;
     line-height: 34px;
   }
+
   .sub {
     font-size: 18px;
     line-height: 18px;
   }
+
   p {
     font-size: 14px;
     line-height: 24px;
@@ -112,6 +122,7 @@ header {
     font-size: 14px;
     line-height: 14px;
   }
+
   &::before {
     background: radial-gradient(ellipse at 100%, transparentize($black, .8) 0%, transparent 75%, transparent 100%);
     content: '';
@@ -130,32 +141,40 @@ header {
 
 .tabs {
   margin-top: -11px;
+
   .tabs-bg {
     transition: .5s;
   }
+
   i {
     display: block;
     font-size: 45px;
   }
+
   a {
     color: darken($white, 20%);
     font-size: 15px;
     line-height: 35px;
   }
+
   .item {
     min-width: 120px;
+
     &:not(.active):hover .tabs-bg {
       color: $red;
       transform: translateY(-7px);
     }
+
     &.active {
       background: linear-gradient(0, $white, darken($white, 15%));
       border: 1px solid darken($white, 15%);
       border-radius: 5px 5px 0 0;
       color: $red;
+
       i {
         animation: bounce 3s linear infinite;
       }
+
       .tabs-bg {
         color: $red;
         transition: .5s;
@@ -166,6 +185,7 @@ header {
 
 .color-box {
   top: 150px;
+
   .btn-style {
     background: $red;
     border: 2px solid $white;
@@ -174,20 +194,25 @@ header {
     margin-top: -35px;
     transition: .5s;
     width: 35px;
+
     .fa {
       font-size: 21px;
       line-height: 25px;
     }
+
     &.yellow {
       background: $yellow;
     }
+
     &.green {
       background: $green;
     }
+
     &.blue {
       background: $blue;
     }
   }
+
   &.show {
     @for $i from 2 through 5 {
       .btn-style {
@@ -198,6 +223,7 @@ header {
       }
     }
   }
+
   @for $i from 1 through 5 {
     .btn-style {
       &:nth-child(#{$i}) {
@@ -221,28 +247,32 @@ header {
   }
 }
 
-
 .left-name {
   background: darken($white, 10%);
+
   div,
   span {
     font-family: $sub-font;
   }
+
   .name {
     color: lighten($black, 25%);
     font-size: 54px;
     font-weight: 800;
   }
+
   span {
     color: $red;
     margin-top: -11px;
     width: 100%;
   }
+
   .sub {
     background: $red;
     border-radius: 50px;
     color: $white;
   }
+
   p {
     color: lighten($black, 25%);
     font-size: 14px;
@@ -257,6 +287,7 @@ header {
   height: 42px;
   letter-spacing: 5px;
   width: 100%;
+
   div {
     font-family: $sub-font;
   }
@@ -275,13 +306,16 @@ header {
         position: absolute;
         width: 42px;
       }
+
       &::after {
         border-bottom: 42px solid $red;
       }
+
       &::before {
         border-top: 42px solid $red;
       }
     }
+
     .edu,
     .flags-exp {
       &::after,
@@ -291,6 +325,7 @@ header {
         right: 0;
       }
     }
+
     .exp,
     .flags-edu {
       &::after,
@@ -314,13 +349,16 @@ header {
         position: absolute;
         width: 42px;
       }
+
       &::after {
         border-bottom: 42px solid $red;
       }
+
       &::before {
         border-top: 42px solid $red;
       }
     }
+
     .edu {
       &::after,
       &::before {
@@ -329,6 +367,7 @@ header {
         right: 0;
       }
     }
+
     .exp {
       &::after,
       &::before {
@@ -347,6 +386,7 @@ header {
     font-weight: 600;
     text-transform: uppercase;
   }
+
   .name {
     background: $red;
     border-radius: 50px;
@@ -356,9 +396,11 @@ header {
     line-height: 18px;
     padding: 5px 21px;
   }
+
   .sub {
     padding: 10px 0 5px;
   }
+
   p {
     font-size: 14px;
   }
@@ -386,6 +428,7 @@ header {
     list-style: none;
     width: 7px;
   }
+
   .name {
     border: 5px solid $red;
     font-size: 28px;
@@ -400,6 +443,7 @@ header {
     font-size: 21px;
     text-align: center;
   }
+
   .name {
     font-weight: 600;
     letter-spacing: 2px;
@@ -414,6 +458,7 @@ header {
       margin-bottom: 20px;
       text-align: center;
     }
+
     .fa {
       font-size: 36px;
     }
@@ -424,6 +469,7 @@ header {
   .qr-box > img {
     width: 100%;
   }
+
   .address-right-box {
     ul > li {
       display: flex;
@@ -431,6 +477,7 @@ header {
       line-height: 20px;
       margin-bottom: 21px;
     }
+
     i {
       font-size: 20px;
       margin-right: 15px;
@@ -449,12 +496,14 @@ header {
   border-bottom: 1px solid darken($white, 25%);
   overflow: hidden;
   padding: 15px 0;
+
   a {
     background-color: lighten($black, 25%);
     font-size: 13px;
     margin: 0 0 7px 5px;
     padding: 10px;
   }
+
   .current {
     background: $red;
   }
@@ -472,24 +521,29 @@ header {
     padding: 0;
     text-align: center;
   }
+
   a {
     background: darken($white, 1%);
     border-bottom: 1px solid darken($white, 10%);
     display: block;
     margin: 10px;
+
     &:hover {
       border-color: $red;
     }
   }
+
   img {
     object-fit: cover;
   }
+
   .title {
     color: lighten($black, 25%);
     font-size: 14px;
     font-weight: 400;
     margin-top: 15px;
   }
+
   .category {
     color: lighten($black, 50%);
     font-size: 11px;
@@ -504,18 +558,22 @@ header {
     opacity: 0;
     transition: .3s ease-out;
   }
+
   &.mfp-ready {
     .mfp-container {
       opacity: 1;
     }
+
     &.mfp-bg {
       opacity: .8;
     }
   }
+
   &.mfp-removing {
     .mfp-container {
       opacity: 0;
     }
+
     &.mfp-bg {
       opacity: 0;
     }
@@ -525,10 +583,12 @@ header {
 .contact {
   background: $white;
   padding: 0;
+
   .map {
     border: 1px solid darken($white, 30%);
     height: 300px;
     width: 100%;
+
     iframe {
       width: 100%;
     }
@@ -538,32 +598,38 @@ header {
 .contact-container {
   display: flex;
   margin: 0;
+
   .contact-info,
   .contact-form {
     margin-left: auto;
     margin-right: auto;
     padding: 20px 60px;
   }
+
   ul {
     border-left: 1px solid $red;
     float: left;
     padding-left: 18px;
+
     li {
       color: lighten($black, 30%);
       font-size: 14px;
       line-height: 20px;
     }
   }
+
   form {
     input,
     textarea {
       box-shadow: inset 0 0 3px 0 lighten($black, 30%);
       resize: none;
     }
+
     label {
       display: block;
       opacity: 0;
     }
+
     button {
       background-color: $red;
       border: 0;
@@ -574,12 +640,14 @@ header {
       text-transform: uppercase;
     }
   }
+
   .main-heading {
     border-bottom: 2px solid transparentize($black, 1-$alpha);
     font-family: $sub-font;
     margin-bottom: 30px;
     padding-bottom: 15px;
     text-transform: uppercase;
+
     &::after {
       background: $red;
       content: '';
@@ -598,19 +666,23 @@ header {
       &:not(.active):hover .tabs-bg {
         color: $yellow;
       }
+
       &.active {
         color: $yellow;
+
         .tabs-bg {
           color: $yellow;
         }
       }
     }
   }
+
   .left-name {
     span {
       color: $yellow;
     }
   }
+
   .progress-bar,
   .qr-box,
   .ex-box > .name,
@@ -623,20 +695,24 @@ header {
   form > button {
     background-color: $yellow;
   }
+
   .main-heading {
     &::after {
       background-color: $yellow;
     }
   }
+
   .skill-name > .name,
   .contact-info > ul {
     border-color: $yellow;
   }
+
   .portfolio-list > .grid-item > a {
     &:hover {
       border-color: $yellow;
     }
   }
+
   .ex-heading {
     .exp,
     .edu,
@@ -645,31 +721,37 @@ header {
       &::before {
         border-top: 42px solid $yellow;
       }
+
       &::after {
         border-bottom: 42px solid $yellow;
       }
     }
   }
 }
+
 .blue {
   .tabs {
     .item {
       &:not(.active):hover .tabs-bg {
         color: $blue;
       }
+
       &.active {
         color: $blue;
+
         .tabs-bg {
           color: $blue;
         }
       }
     }
   }
+
   .left-name {
     span {
       color: $blue;
     }
   }
+
   .progress-bar,
   .qr-box,
   .ex-box > .name,
@@ -682,20 +764,24 @@ header {
   form > button {
     background-color: $blue;
   }
+
   .main-heading {
     &::after {
       background-color: $blue;
     }
   }
+
   .skill-name > .name,
   .contact-info > ul {
     border-color: $blue;
   }
+
   .portfolio-list > .grid-item > a {
     &:hover {
       border-color: $blue;
     }
   }
+
   .ex-heading {
     .exp,
     .edu,
@@ -704,6 +790,7 @@ header {
       &::before {
         border-top: 42px solid $blue;
       }
+
       &::after {
         border-bottom: 42px solid $blue;
       }
@@ -717,19 +804,23 @@ header {
       &:not(.active):hover .tabs-bg {
         color: $green;
       }
+
       &.active {
         color: $green;
+
         .tabs-bg {
           color: $green;
         }
       }
     }
   }
+
   .left-name {
     span {
       color: $green;
     }
   }
+
   .progress-bar,
   .qr-box,
   .ex-box > .name,
@@ -742,20 +833,24 @@ header {
   form > button {
     background-color: $green;
   }
+
   .main-heading {
     &::after {
       background-color: $green;
     }
   }
+
   .skill-name > .name,
   .contact-info > ul {
     border-color: $green;
   }
+
   .portfolio-list > .grid-item > a {
     &:hover {
       border-color: $green;
     }
   }
+
   .ex-heading {
     .exp,
     .edu,
@@ -764,6 +859,7 @@ header {
       &::before {
         border-top: 42px solid $green;
       }
+
       &::after {
         border-bottom: 42px solid $green;
       }
