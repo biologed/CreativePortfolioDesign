@@ -8,18 +8,6 @@ $(document).ready(function() {
         $('#header').attr('class', 'container shadow-none position-relative ' + getColor);
     }
 
-    /* ---------------------------------------------------------------------- */
-    /*	Logo
-    /* ---------------------------------------------------------------------- */
-
-    const logo = $('.logo');
-    $('.item:not(:first-child) a').click(function() {
-        logo.fadeIn(600);
-    });
-    $('.item:first-child a').click(function() {
-        logo.fadeOut(600);
-    });
-
     $('.tab-portfolio').click(function () {
         setTimeout(function () {
             $('#portfolio-list').isotope({
