@@ -3,7 +3,7 @@ $(document).ready(function() {
     /*	Color + cookie.js
     /* ---------------------------------------------------------------------- */
     const getColor = Cookies.get('color');
-    if(typeof getColor !== 'undefined' || getColor != null) {
+    if(typeof getColor !== 'undefined' && typeof getColor != null) {
         $('#content').attr('class' , getColor);
         $('#header').attr('class', 'container shadow-none position-relative ' + getColor);
     }
